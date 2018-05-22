@@ -1,0 +1,4141 @@
+<Proof_Obligations>
+<Define name="B definitions">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="NAT"/>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT"/>
+<Binary_Exp op="..">
+<Id value="MININT"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ctx"/>
+<Define name="seext"/>
+<Define name="lprp">
+<Attr>
+<Pos l="6" s="10" c="1"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="6" s="1" c="20"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:5:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="6" s="7" c="12"/>
+</Attr>
+</Id>
+<Binary_Exp typref="3403728530" op="&gt;-&gt;&gt;">
+<Attr>
+<Pos l="6" s="4" c="26"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:5:1:2:1" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="6" s="3" c="22"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:5:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="6" s="4" c="31"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Define>
+<Define name="inprp">
+<Attr>
+<Pos l="2" s="4" c="1"/>
+</Attr>
+<Set>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:1:1:1" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="2" s="4" c="6"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:1:2:1" value="POSITION" typref="2741815774">
+<Attr>
+<Pos l="2" s="8" c="13"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:1:2:2:1" value="open" typref="955270843">
+<Attr>
+<Pos l="2" s="4" c="25"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:1:2:2:2" value="closed" typref="955270843">
+<Attr>
+<Pos l="2" s="6" c="31"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Attr>
+<Pos l="4" s="4" c="1"/>
+</Attr>
+<Set>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:3:1:1" value="STATUS" typref="515940807">
+<Attr>
+<Pos l="4" s="6" c="6"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:3:1:2:1" value="locked" typref="2246778642">
+<Attr>
+<Pos l="4" s="6" c="14"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:3:1:2:2" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="4" s="8" c="21"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Attr>
+<Pos l="2" s="4" c="1"/>
+</Attr>
+<Set>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:1:1:1" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="2" s="3" c="6"/>
+</Attr>
+</Id>
+</Set>
+</Define>
+<Define name="inext">
+<Attr>
+<Pos l="4" s="9" c="1"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="4" s="1" c="20"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:3:1:1" initialTag="position" value="position" typref="483395499">
+<Attr>
+<Pos l="4" s="8" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp initialTag="((DOOR) --&gt; (POSITION))" typref="2092253592" op="--&gt;">
+<Attr>
+<Pos l="4" s="3" c="27"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:3:1:2:1" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="4" s="4" c="22"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:3:1:2:2" value="POSITION" typref="2741815774">
+<Attr>
+<Pos l="4" s="8" c="31"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Attr>
+<Pos l="6" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((status) : (((DOOR) --&gt; (STATUS))))" op=":">
+<Attr>
+<Pos l="6" s="1" c="18"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="6" s="6" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp typref="1643589999" op="--&gt;">
+<Attr>
+<Pos l="6" s="3" c="25"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:1:2:1" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="6" s="4" c="20"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:1:2:2" value="STATUS" typref="515940807">
+<Attr>
+<Pos l="6" s="6" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((position)~ )[({open})] : POW( ((status)~ )[({unlocked})])" op="&lt;:">
+<Attr>
+<Pos l="6" s="2" c="56"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="6" s="8" c="38"/>
+</Attr>
+<Unary_Exp typref="121607861" op="~">
+<Attr>
+<Pos l="6" s="8" c="38"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:2:1:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="6" s="8" c="38"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="2741815774" op="{">
+<Attr>
+<Pos l="6" s="1" c="48"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:2:1:2:1" value="open" typref="955270843">
+<Attr>
+<Pos l="6" s="4" c="49"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="6" s="6" c="59"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="6" s="6" c="59"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:2:2:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="6" s="6" c="59"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="6" s="1" c="67"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:2:2:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="6" s="8" c="68"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Attr>
+<Pos l="4" s="9" c="1"/>
+</Attr>
+<Exp_Comparison op="&lt;:">
+<Attr>
+<Pos l="4" s="2" c="16"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:3:1:1" initialTag="keys" value="keys" typref="3822943642">
+<Attr>
+<Pos l="4" s="4" c="11"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:3:1:2" initialTag="KEY" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="4" s="3" c="19"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Define>
+<Define name="inv">
+<Attr>
+<Pos l="7" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( (unlocks )[keys])" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="31"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="19"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="20"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:2" value="keys" typref="3822943642">
+<Attr>
+<Pos l="7" s="4" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="masterkey : POW( DOOR)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="60"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="50"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="7" s="4" c="63"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(masterkey) &lt;= 1)" op="&lt;=">
+<Attr>
+<Pos l="7" s="2" c="86"/>
+</Attr>
+<Unary_Exp typref="2701647786" op="card">
+<Attr>
+<Pos l="7" s="4" c="70"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="75"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:2" value="1" typref="2701647786">
+<Attr>
+<Pos l="7" s="1" c="89"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( masterkey)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="113"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="101"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="102"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:2" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="116"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ass"/>
+<Define name="cst"/>
+<Proof_Obligation>
+<Comment>Inclusion dans une machine abstraite</Comment>
+<Tag>InstanciatedConstraintsLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Goal>
+<Nary_Pred op="&amp;"/>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Inclusion dans une machine abstraite</Comment>
+<Tag>InstanciatedConstraintsLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Goal>
+<Nary_Pred op="&amp;"/>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Inclusion dans une machine abstraite</Comment>
+<Tag>InstanciatedConstraintsLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Goal>
+<Nary_Pred op="&amp;"/>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Inclusion dans une machine abstraite</Comment>
+<Tag>InstanciatedConstraintsLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Goal>
+<Nary_Pred op="&amp;"/>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Initialisation dans une machine abstraite</Comment>
+<Tag>Initialisation</Tag>
+<Tag>Invariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Sub_Calculus>
+<Nary_Sub op=";">
+<Attr>
+<Pos l="5" s="14" c="1"/>
+</Attr>
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:4:1:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="5" s="8" c="16"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp typref="483395499" op="*">
+<Attr>
+<Pos l="5" s="8" c="16"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:4:1:2:1:1" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="5" s="4" c="28"/>
+</Attr>
+</Id>
+<Nary_Exp typref="2741815774" op="{">
+<Attr>
+<Pos l="5" s="1" c="35"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:4:1:2:1:2:1" value="closed" typref="955270843">
+<Attr>
+<Pos l="5" s="6" c="36"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+<Attr>
+<Pos l="7" s="14" c="1"/>
+</Attr>
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:6:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="16"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp typref="1113446292" op="*">
+<Attr>
+<Pos l="7" s="6" c="16"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:6:1:2:1:1" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="7" s="4" c="26"/>
+</Attr>
+</Id>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="33"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:6:1:2:1:2:1" value="locked" typref="2246778642">
+<Attr>
+<Pos l="7" s="6" c="34"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+<Attr>
+<Pos l="5" s="14" c="1"/>
+</Attr>
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:4:1:1:1" value="keys" typref="3822943642">
+<Attr>
+<Pos l="5" s="4" c="16"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:4:1:2:1" typref="3817003670">
+<Attr>
+<Pos l="5" s="4" c="16"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Attr>
+<Pos l="8" s="14" c="1"/>
+</Attr>
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:7:1:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="8" s="9" c="16"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:7:1:2:1" typref="3817003670">
+<Attr>
+<Pos l="8" s="9" c="16"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+</Nary_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="4" s="9" c="1"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="4" s="1" c="20"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:3:1:1" initialTag="position" value="position" typref="483395499">
+<Attr>
+<Pos l="4" s="8" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp initialTag="((DOOR) --&gt; (POSITION))" typref="2092253592" op="--&gt;">
+<Attr>
+<Pos l="4" s="3" c="27"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:3:1:2:1" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="4" s="4" c="22"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:3:1:2:2" value="POSITION" typref="2741815774">
+<Attr>
+<Pos l="4" s="8" c="31"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Attr>
+<Pos l="6" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((status) : (((DOOR) --&gt; (STATUS))))" op=":">
+<Attr>
+<Pos l="6" s="1" c="18"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="6" s="6" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp typref="1643589999" op="--&gt;">
+<Attr>
+<Pos l="6" s="3" c="25"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:1:2:1" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="6" s="4" c="20"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:1:2:2" value="STATUS" typref="515940807">
+<Attr>
+<Pos l="6" s="6" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((position)~ )[({open})] : POW( ((status)~ )[({unlocked})])" op="&lt;:">
+<Attr>
+<Pos l="6" s="2" c="56"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="6" s="8" c="38"/>
+</Attr>
+<Unary_Exp typref="121607861" op="~">
+<Attr>
+<Pos l="6" s="8" c="38"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:2:1:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="6" s="8" c="38"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="2741815774" op="{">
+<Attr>
+<Pos l="6" s="1" c="48"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:2:1:2:1" value="open" typref="955270843">
+<Attr>
+<Pos l="6" s="4" c="49"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="6" s="6" c="59"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="6" s="6" c="59"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:2:2:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="6" s="6" c="59"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="6" s="1" c="67"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:5:1:2:2:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="6" s="8" c="68"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Attr>
+<Pos l="4" s="9" c="1"/>
+</Attr>
+<Exp_Comparison op="&lt;:">
+<Attr>
+<Pos l="4" s="2" c="16"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:3:1:1" initialTag="keys" value="keys" typref="3822943642">
+<Attr>
+<Pos l="4" s="4" c="11"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:3:1:2" initialTag="KEY" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="4" s="3" c="19"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="7" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( (unlocks )[keys])" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="31"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="19"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="20"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:2" value="keys" typref="3822943642">
+<Attr>
+<Pos l="7" s="4" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="masterkey : POW( DOOR)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="60"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="50"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="7" s="4" c="63"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(masterkey) &lt;= 1)" op="&lt;=">
+<Attr>
+<Pos l="7" s="2" c="86"/>
+</Attr>
+<Unary_Exp typref="2701647786" op="card">
+<Attr>
+<Pos l="7" s="4" c="70"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="75"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:2" value="1" typref="2701647786">
+<Attr>
+<Pos l="7" s="1" c="89"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( masterkey)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="113"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="101"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="102"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:2" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="116"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>insert</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="11" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="11" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:1:2" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="11" s="3" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="11" s="1" c="27"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:2:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="11" s="2" c="24"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="11" s="4" c="29"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="11" s="1" c="48"/>
+</Attr>
+<Binary_Exp typref="1028334486" op="(">
+<Attr>
+<Pos l="11" s="0" c="43"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="11" s="7" c="36"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:3:1:2" value="kk" typref="957941801">
+<Attr>
+<Pos l="11" s="2" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:3:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="11" s="2" c="50"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Operation_Call>
+<Attr>
+<Pos l="12" s="0" c="23"/>
+</Attr>
+<Name>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:3:1:1:1" value="insertkey">
+<Attr>
+<Pos l="12" s="9" c="14"/>
+</Attr>
+</Id>
+</Name>
+<Input_Parameters>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:3:1:2:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="12" s="2" c="24"/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Operation name="insertkey">
+<Attr>
+<Pos l="7" s="9" endLine="10" c="1"/>
+</Attr>
+<Input_Parameters>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:1:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:3:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="7" s="2" c="11"/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Precondition>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="8" s="1" c="16"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:1:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:3:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="8" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:1:2:1:2,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:3:1:1:1" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="8" s="3" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Precondition>
+<Body>
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:1:3:1:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:3:1:1:1" value="keys" typref="3822943642">
+<Attr>
+<Pos l="9" s="4" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp typref="3822943642" op="\/">
+<Attr>
+<Pos l="9" s="4" c="14"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:1:3:1:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:3:1:1:1" value="keys" typref="3822943642">
+<Attr>
+<Pos l="9" s="4" c="22"/>
+</Attr>
+</Id>
+<Nary_Exp typref="3822943642" op="{">
+<Attr>
+<Pos l="9" s="1" c="30"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:1:3:1:2:1:2:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:3:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="9" s="2" c="31"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+</Body>
+</Operation>
+</Operation_Call>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="7" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( (unlocks )[keys])" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="31"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="19"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="20"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:2" value="keys" typref="3822943642">
+<Attr>
+<Pos l="7" s="4" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="masterkey : POW( DOOR)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="60"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="50"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="7" s="4" c="63"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(masterkey) &lt;= 1)" op="&lt;=">
+<Attr>
+<Pos l="7" s="2" c="86"/>
+</Attr>
+<Unary_Exp typref="2701647786" op="card">
+<Attr>
+<Pos l="7" s="4" c="70"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="75"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:2" value="1" typref="2701647786">
+<Attr>
+<Pos l="7" s="1" c="89"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( masterkey)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="113"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="101"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="102"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:2" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="116"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>extract</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="15" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="15" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:1:2" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="15" s="3" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="15" s="1" c="27"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:2:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="15" s="2" c="24"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="15" s="4" c="29"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="15" s="1" c="48"/>
+</Attr>
+<Binary_Exp typref="1028334486" op="(">
+<Attr>
+<Pos l="15" s="0" c="43"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="15" s="7" c="36"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:1:2" value="kk" typref="957941801">
+<Attr>
+<Pos l="15" s="2" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="15" s="2" c="50"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="15" s="1" c="66"/>
+</Attr>
+<Binary_Exp typref="2246778642" op="(">
+<Attr>
+<Pos l="15" s="0" c="61"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:4:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="15" s="6" c="55"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:4:1:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="15" s="2" c="62"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:4:2" value="locked" typref="2246778642">
+<Attr>
+<Pos l="15" s="6" c="68"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Operation_Call>
+<Attr>
+<Pos l="16" s="0" c="23"/>
+</Attr>
+<Name>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:3:1:1:1" value="removekey">
+<Attr>
+<Pos l="16" s="9" c="14"/>
+</Attr>
+</Id>
+</Name>
+<Input_Parameters>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:3:1:2:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="16" s="2" c="24"/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Operation name="removekey">
+<Attr>
+<Pos l="11" s="9" endLine="14" c="1"/>
+</Attr>
+<Input_Parameters>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:3:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="11" s="2" c="11"/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Precondition>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="12" s="1" c="16"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:3:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="12" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:2:1:2,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:3:1:1:1" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="12" s="3" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Precondition>
+<Body>
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:3:1:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:3:1:1:1" value="keys" typref="3822943642">
+<Attr>
+<Pos l="13" s="4" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp typref="3822943642" op="-">
+<Attr>
+<Pos l="13" s="4" c="14"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:3:1:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:3:1:1:1" value="keys" typref="3822943642">
+<Attr>
+<Pos l="13" s="4" c="22"/>
+</Attr>
+</Id>
+<Nary_Exp typref="3822943642" op="{">
+<Attr>
+<Pos l="13" s="1" c="29"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:3:1:2:1:2:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:3:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="13" s="2" c="30"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+</Body>
+</Operation>
+</Operation_Call>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="7" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( (unlocks )[keys])" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="31"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="19"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="20"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:2" value="keys" typref="3822943642">
+<Attr>
+<Pos l="7" s="4" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="masterkey : POW( DOOR)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="60"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="50"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="7" s="4" c="63"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(masterkey) &lt;= 1)" op="&lt;=">
+<Attr>
+<Pos l="7" s="2" c="86"/>
+</Attr>
+<Unary_Exp typref="2701647786" op="card">
+<Attr>
+<Pos l="7" s="4" c="70"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="75"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:2" value="1" typref="2701647786">
+<Attr>
+<Pos l="7" s="1" c="89"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( masterkey)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="113"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="101"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="102"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:2" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="116"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>unlock</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="19" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="19" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:1:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="19" s="4" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="19" s="1" c="38"/>
+</Attr>
+<Binary_Exp typref="957941801" op="(">
+<Attr>
+<Pos l="19" s="0" c="33"/>
+</Attr>
+<Unary_Exp typref="26603529" op="~">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:1:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:1:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="19" s="2" c="34"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:2" value="keys" typref="3822943642">
+<Attr>
+<Pos l="19" s="4" c="40"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="19" s="1" c="50"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:3:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="19" s="2" c="47"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:3:2" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="19" s="9" c="52"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Operation_Call>
+<Attr>
+<Pos l="20" s="0" c="24"/>
+</Attr>
+<Name>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:3:1:1:1" value="unlockdoor">
+<Attr>
+<Pos l="20" s="10" c="14"/>
+</Attr>
+</Id>
+</Name>
+<Input_Parameters>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:3:1:2:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="20" s="2" c="25"/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Operation name="unlockdoor">
+<Attr>
+<Pos l="13" s="10" endLine="16" c="1"/>
+</Attr>
+<Input_Parameters>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:3:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="13" s="2" c="12"/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Precondition>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="14" s="1" c="16"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:2:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:3:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="14" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:2:2:1:2,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:3:1:1:1" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="14" s="4" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Precondition>
+<Body>
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:2:3:1:1:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:3:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="15" s="6" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op="&lt;+">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:2:3:1:1:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:3:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="15" s="6" c="14"/>
+</Attr>
+</Id>
+<Nary_Exp op="{">
+<Binary_Exp op="|-&gt;">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:2:3:1:1:1:2,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:3:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="15" s="2" c="21"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:2:3:1:2:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:3:1:1:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="15" s="8" c="28"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+</Body>
+</Operation>
+</Operation_Call>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="7" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( (unlocks )[keys])" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="31"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="19"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="20"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:2" value="keys" typref="3822943642">
+<Attr>
+<Pos l="7" s="4" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="masterkey : POW( DOOR)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="60"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="50"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="7" s="4" c="63"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(masterkey) &lt;= 1)" op="&lt;=">
+<Attr>
+<Pos l="7" s="2" c="86"/>
+</Attr>
+<Unary_Exp typref="2701647786" op="card">
+<Attr>
+<Pos l="7" s="4" c="70"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="75"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:2" value="1" typref="2701647786">
+<Attr>
+<Pos l="7" s="1" c="89"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( masterkey)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="113"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="101"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="102"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:2" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="116"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>quicklock</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="23" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="23" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:1:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="23" s="4" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="23" s="1" c="38"/>
+</Attr>
+<Binary_Exp typref="955270843" op="(">
+<Attr>
+<Pos l="23" s="0" c="33"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:2:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="23" s="8" c="25"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:2:1:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="23" s="2" c="34"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:2:2" value="closed" typref="955270843">
+<Attr>
+<Pos l="23" s="6" c="40"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Nary_Sub op="||">
+<Operation_Call>
+<Attr>
+<Pos l="24" s="0" c="22"/>
+</Attr>
+<Name>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="lockdoor">
+<Attr>
+<Pos l="24" s="8" c="14"/>
+</Attr>
+</Id>
+</Name>
+<Input_Parameters>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:2:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="24" s="2" c="23"/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Operation name="lockdoor">
+<Attr>
+<Pos l="17" s="8" endLine="20" c="1"/>
+</Attr>
+<Input_Parameters>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="17" s="2" c="10"/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Precondition>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="18" s="1" c="16"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:2:1:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="18" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:2:1:1:2,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="18" s="4" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="18" s="1" c="38"/>
+</Attr>
+<Binary_Exp typref="955270843" op="(">
+<Attr>
+<Pos l="18" s="0" c="33"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:2:1:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="18" s="8" c="25"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:2:1:2:1:2,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="18" s="2" c="34"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:2:1:2:2,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="closed" typref="955270843">
+<Attr>
+<Pos l="18" s="6" c="40"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Precondition>
+<Body>
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:3:1:1:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="19" s="6" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op="&lt;+">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:3:1:1:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="19" s="6" c="14"/>
+</Attr>
+</Id>
+<Nary_Exp op="{">
+<Binary_Exp op="|-&gt;">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:3:1:1:1:2,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="19" s="2" c="21"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:3:1:2:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="locked" typref="2246778642">
+<Attr>
+<Pos l="19" s="6" c="28"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+</Body>
+</Operation>
+</Operation_Call>
+<Operation_Call>
+<Attr>
+<Pos l="24" s="0" c="39"/>
+</Attr>
+<Name>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:2:1:1" value="removekey">
+<Attr>
+<Pos l="24" s="9" c="30"/>
+</Attr>
+</Id>
+</Name>
+<Input_Parameters>
+<Binary_Exp typref="957941801" op="(">
+<Attr>
+<Pos l="24" s="0" c="48"/>
+</Attr>
+<Unary_Exp typref="26603529" op="~">
+<Attr>
+<Pos l="24" s="7" c="40"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:2:2:1:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="24" s="7" c="40"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:2:2:1:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="24" s="2" c="49"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Input_Parameters>
+<Operation name="removekey">
+<Attr>
+<Pos l="11" s="9" endLine="14" c="1"/>
+</Attr>
+<Input_Parameters>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:2:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="11" s="2" c="11"/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Precondition>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="12" s="1" c="16"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:2:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="12" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:2:1:2,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:2:1:1" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="12" s="3" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Precondition>
+<Body>
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:3:1:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:2:1:1" value="keys" typref="3822943642">
+<Attr>
+<Pos l="13" s="4" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp typref="3822943642" op="-">
+<Attr>
+<Pos l="13" s="4" c="14"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:3:1:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:2:1:1" value="keys" typref="3822943642">
+<Attr>
+<Pos l="13" s="4" c="22"/>
+</Attr>
+</Id>
+<Nary_Exp typref="3822943642" op="{">
+<Attr>
+<Pos l="13" s="1" c="29"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:3:1:2:1:2:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:2:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="13" s="2" c="30"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+</Body>
+</Operation>
+</Operation_Call>
+</Nary_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="7" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( (unlocks )[keys])" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="31"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="19"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="20"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:2" value="keys" typref="3822943642">
+<Attr>
+<Pos l="7" s="4" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="masterkey : POW( DOOR)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="60"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="50"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="7" s="4" c="63"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(masterkey) &lt;= 1)" op="&lt;=">
+<Attr>
+<Pos l="7" s="2" c="86"/>
+</Attr>
+<Unary_Exp typref="2701647786" op="card">
+<Attr>
+<Pos l="7" s="4" c="70"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="75"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:2" value="1" typref="2701647786">
+<Attr>
+<Pos l="7" s="1" c="89"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( masterkey)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="113"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="101"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="102"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:2" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="116"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>insertmaster</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="27" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:5:2:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="27" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:5:2:1:1:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="27" s="4" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="27" s="1" c="35"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:5:2:1:2:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="27" s="9" c="25"/>
+</Attr>
+</Id>
+<EmptySet tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:5:2:1:2:2" typref="3817003670">
+<Attr>
+<Pos l="27" s="2" c="37"/>
+</Attr>
+</EmptySet>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:5:3:1:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="28" s="9" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Nary_Exp typref="1709653955" op="{">
+<Attr>
+<Pos l="28" s="9" c="14"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:5:3:1:2:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="28" s="2" c="28"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="7" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( (unlocks )[keys])" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="31"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="19"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="20"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:2" value="keys" typref="3822943642">
+<Attr>
+<Pos l="7" s="4" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="masterkey : POW( DOOR)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="60"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="50"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="7" s="4" c="63"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(masterkey) &lt;= 1)" op="&lt;=">
+<Attr>
+<Pos l="7" s="2" c="86"/>
+</Attr>
+<Unary_Exp typref="2701647786" op="card">
+<Attr>
+<Pos l="7" s="4" c="70"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="75"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:2" value="1" typref="2701647786">
+<Attr>
+<Pos l="7" s="1" c="89"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( masterkey)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="113"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="101"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="102"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:2" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="116"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>removemaster</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="31" s="1" c="31"/>
+</Attr>
+<Binary_Exp typref="515940807" op="[">
+<Attr>
+<Pos l="31" s="6" c="13"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:6:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="31" s="6" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:6:1:1:1:2" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="31" s="9" c="20"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="31" s="1" c="33"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:6:1:1:2:1" value="locked" typref="2246778642">
+<Attr>
+<Pos l="31" s="6" c="34"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Exp_Comparison>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:6:2:1:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="32" s="9" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:6:2:1:2:1" typref="3817003670">
+<Attr>
+<Pos l="32" s="9" c="14"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="7" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( (unlocks )[keys])" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="31"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="19"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="20"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:2" value="keys" typref="3822943642">
+<Attr>
+<Pos l="7" s="4" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="masterkey : POW( DOOR)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="60"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="50"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="7" s="4" c="63"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(masterkey) &lt;= 1)" op="&lt;=">
+<Attr>
+<Pos l="7" s="2" c="86"/>
+</Attr>
+<Unary_Exp typref="2701647786" op="card">
+<Attr>
+<Pos l="7" s="4" c="70"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="75"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:2" value="1" typref="2701647786">
+<Attr>
+<Pos l="7" s="1" c="89"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( masterkey)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="113"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="93"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="101"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="102"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:4:2" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="116"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessConstraints</Tag>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;"/>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessProperties</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Hypothesis/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInvariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison initialTag="((status)~ )[({unlocked})] : POW( (unlocks )[keys])" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="31"/>
+</Attr>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Unary_Exp typref="1996258700" op="~">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="7" s="6" c="11"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="7" s="1" c="19"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:1:2:1" value="unlocked" typref="2246778642">
+<Attr>
+<Pos l="7" s="8" c="20"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1709653955" op="[">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="7" s="7" c="34"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:1:2:2" value="keys" typref="3822943642">
+<Attr>
+<Pos l="7" s="4" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison initialTag="masterkey : POW( DOOR)" op="&lt;:">
+<Attr>
+<Pos l="7" s="2" c="60"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="50"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="7" s="4" c="63"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="75"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="75"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison initialTag="(card(masterkey) &lt;= 1)" op="&lt;=">
+<Attr>
+<Pos l="7" s="2" c="86"/>
+</Attr>
+<Unary_Exp typref="2701647786" op="card">
+<Attr>
+<Pos l="7" s="4" c="70"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:1:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="7" s="9" c="75"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:6:1:3:2" value="1" typref="2701647786">
+<Attr>
+<Pos l="7" s="1" c="89"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInitialisation</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_insert</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="11" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="11" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:1:2" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="11" s="3" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="11" s="1" c="27"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:2:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="11" s="2" c="24"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="11" s="4" c="29"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:3:1:2" value="kk" typref="957941801">
+<Attr>
+<Pos l="11" s="2" c="44"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="11" s="7" c="36"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="11" s="7" c="36"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;">
+<Unary_Exp op="dom">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="11" s="7" c="36"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="11" s="7" c="36"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_insert</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="11" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="11" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:1:2" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="11" s="3" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="11" s="1" c="27"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:2:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="11" s="2" c="24"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="11" s="4" c="29"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="11" s="1" c="48"/>
+</Attr>
+<Binary_Exp typref="1028334486" op="(">
+<Attr>
+<Pos l="11" s="0" c="43"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="11" s="7" c="36"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:3:1:2" value="kk" typref="957941801">
+<Attr>
+<Pos l="11" s="2" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:2:1:3:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="11" s="2" c="50"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Sub_Calculus>
+<Nary_Sub op=";">
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:1:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:3:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="7" s="2" c="11"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:1:3:1:2:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="12" s="2" c="24"/>
+</Attr>
+</Id>
+</Values>
+</Simple_Assignement_Sub>
+</Nary_Sub>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Sub_Calculus>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_extract</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="15" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="15" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:1:2" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="15" s="3" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="15" s="1" c="27"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:2:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="15" s="2" c="24"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="15" s="4" c="29"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:1:2" value="kk" typref="957941801">
+<Attr>
+<Pos l="15" s="2" c="44"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="15" s="7" c="36"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="15" s="7" c="36"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;">
+<Unary_Exp op="dom">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="15" s="7" c="36"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="15" s="7" c="36"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="15" s="1" c="48"/>
+</Attr>
+<Binary_Exp typref="1028334486" op="(">
+<Attr>
+<Pos l="15" s="0" c="43"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="15" s="7" c="36"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:1:2" value="kk" typref="957941801">
+<Attr>
+<Pos l="15" s="2" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="15" s="2" c="50"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:4:1:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="15" s="2" c="62"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:4:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="15" s="6" c="55"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:4:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="15" s="6" c="55"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;">
+<Unary_Exp op="dom">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:4:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="15" s="6" c="55"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:4:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="15" s="6" c="55"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_extract</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="15" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="15" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:1:2" value="KEY" typref="3822943642">
+<Attr>
+<Pos l="15" s="3" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="15" s="1" c="27"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:2:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="15" s="2" c="24"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:2:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="15" s="4" c="29"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="15" s="1" c="48"/>
+</Attr>
+<Binary_Exp typref="1028334486" op="(">
+<Attr>
+<Pos l="15" s="0" c="43"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="15" s="7" c="36"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:1:2" value="kk" typref="957941801">
+<Attr>
+<Pos l="15" s="2" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:3:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="15" s="2" c="50"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="15" s="1" c="66"/>
+</Attr>
+<Binary_Exp typref="2246778642" op="(">
+<Attr>
+<Pos l="15" s="0" c="61"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:4:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="15" s="6" c="55"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:4:1:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="15" s="2" c="62"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:2:1:4:2" value="locked" typref="2246778642">
+<Attr>
+<Pos l="15" s="6" c="68"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Sub_Calculus>
+<Nary_Sub op=";">
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:5:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:3:1:1:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="11" s="2" c="11"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:2:3:1:2:1" value="kk" typref="957941801">
+<Attr>
+<Pos l="16" s="2" c="24"/>
+</Attr>
+</Id>
+</Values>
+</Simple_Assignement_Sub>
+</Nary_Sub>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Sub_Calculus>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_unlock</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="19" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="19" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:1:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="19" s="4" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:1:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="19" s="2" c="34"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Unary_Exp typref="26603529" op="~">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:1:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Unary_Exp typref="26603529" op="~">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:1:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Binary_Exp op="+-&gt;">
+<Unary_Exp op="dom">
+<Unary_Exp typref="26603529" op="~">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:1:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Unary_Exp typref="26603529" op="~">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:1:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="19" s="1" c="38"/>
+</Attr>
+<Binary_Exp typref="957941801" op="(">
+<Attr>
+<Pos l="19" s="0" c="33"/>
+</Attr>
+<Unary_Exp typref="26603529" op="~">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:1:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:1:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="19" s="2" c="34"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:2" value="keys" typref="3822943642">
+<Attr>
+<Pos l="19" s="4" c="40"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_unlock</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="19" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="19" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:1:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="19" s="4" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="19" s="1" c="38"/>
+</Attr>
+<Binary_Exp typref="957941801" op="(">
+<Attr>
+<Pos l="19" s="0" c="33"/>
+</Attr>
+<Unary_Exp typref="26603529" op="~">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:1:1:1" value="unlocks" typref="2015432583">
+<Attr>
+<Pos l="19" s="7" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:1:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="19" s="2" c="34"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:2:2" value="keys" typref="3822943642">
+<Attr>
+<Pos l="19" s="4" c="40"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="19" s="1" c="50"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:3:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="19" s="2" c="47"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:2:1:3:2" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="19" s="9" c="52"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Sub_Calculus>
+<Nary_Sub op=";">
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:3:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="13" s="2" c="12"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:3:3:1:2:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="20" s="2" c="25"/>
+</Attr>
+</Id>
+</Values>
+</Simple_Assignement_Sub>
+</Nary_Sub>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Binary_Pred>
+</Sub_Calculus>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_quicklock</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="23" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="23" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:1:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="23" s="4" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:2:1:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="23" s="2" c="34"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:2:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="23" s="8" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:2:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="23" s="8" c="25"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;">
+<Unary_Exp op="dom">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:2:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="23" s="8" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:2:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="23" s="8" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_quicklock</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="23" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="23" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:1:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="23" s="4" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="23" s="1" c="38"/>
+</Attr>
+<Binary_Exp typref="955270843" op="(">
+<Attr>
+<Pos l="23" s="0" c="33"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:2:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="23" s="8" c="25"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:2:1:2" value="dd" typref="1028334486">
+<Attr>
+<Pos l="23" s="2" c="34"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:2:1:2:2" value="closed" typref="955270843">
+<Attr>
+<Pos l="23" s="6" c="40"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Sub_Calculus>
+<Nary_Sub op=";">
+<Simple_Assignement_Sub>
+<Variables>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="17" s="2" c="10"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:2:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="24" s="2" c="23"/>
+</Attr>
+</Id>
+</Values>
+</Simple_Assignement_Sub>
+</Nary_Sub>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="18" s="1" c="16"/>
+</Attr>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:2:1:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="18" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:2:1:1:2,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="18" s="4" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:2:1:2:1:2,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="18" s="2" c="34"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:2:1:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="18" s="8" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:2:1:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="18" s="8" c="25"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;">
+<Unary_Exp op="dom">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:2:1:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="18" s="8" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:7:3:2:1:2:1:1,C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:4:3:1:1:1:1" value="position" typref="483395499">
+<Attr>
+<Pos l="18" s="8" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Binary_Pred>
+</Sub_Calculus>
+<Sub_Calculus>
+<Nary_Sub op=";"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Sub_Calculus>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_insertmaster</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="27" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:5:2:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="27" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:5:2:1:1:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="27" s="4" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_insertmaster</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="27" s="1" c="16"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:5:2:1:1:1" value="dd" typref="1028334486">
+<Attr>
+<Pos l="27" s="2" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:5:2:1:1:2" value="DOOR" typref="1709653955">
+<Attr>
+<Pos l="27" s="4" c="18"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="27" s="1" c="35"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:5:2:1:2:1" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="27" s="9" c="25"/>
+</Attr>
+</Id>
+<EmptySet tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:5:2:1:2:2" typref="3817003670">
+<Attr>
+<Pos l="27" s="2" c="37"/>
+</Attr>
+</EmptySet>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_removemaster</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_removemaster</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="31" s="1" c="31"/>
+</Attr>
+<Binary_Exp typref="515940807" op="[">
+<Attr>
+<Pos l="31" s="6" c="13"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:6:1:1:1:1" value="status" typref="1113446292">
+<Attr>
+<Pos l="31" s="6" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:6:1:1:1:2" value="masterkey" typref="1709653955">
+<Attr>
+<Pos l="31" s="9" c="20"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Nary_Exp typref="515940807" op="{">
+<Attr>
+<Pos l="31" s="1" c="33"/>
+</Attr>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:8:6:1:1:2:1" value="locked" typref="2246778642">
+<Attr>
+<Pos l="31" s="6" c="34"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Exp_Comparison>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<TypeInfos>
+<Type id="2015432583">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:1:1:1:1" value="KEY"/>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:1:1:1:2" value="DOOR"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1709653955">
+<Unary_Exp op="POW">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:2:1:1" value="DOOR"/>
+</Unary_Exp>
+</Type>
+<Type id="3403728530">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:3:1:1:1:1" value="KEY"/>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:3:1:1:1:2" value="DOOR"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3822943642">
+<Unary_Exp op="POW">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:4:1:1" value="KEY"/>
+</Unary_Exp>
+</Type>
+<Type id="1996258700">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:5:1:1:1" value="STATUS"/>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:5:1:1:2" value="DOOR"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1113446292">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:6:1:1:1" value="DOOR"/>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:6:1:1:2" value="STATUS"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="515940807">
+<Unary_Exp op="POW">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:7:1:1" value="STATUS"/>
+</Unary_Exp>
+</Type>
+<Type id="2246778642">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:8:1" value="STATUS"/>
+</Type>
+<Type id="2701647786">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:9:1" value="INTEGER"/>
+</Type>
+<Type id="3817003670">
+<Unary_Exp op="POW">
+<Generic_Type tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:10:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="957941801">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:11:1" value="KEY"/>
+</Type>
+<Type id="1028334486">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:12:1" value="DOOR"/>
+</Type>
+<Type id="26603529">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:13:1:1:1" value="DOOR"/>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:13:1:1:2" value="KEY"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="955270843">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:14:1" value="POSITION"/>
+</Type>
+<Type id="483395499">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:15:1:1:1" value="DOOR"/>
+<Id tag="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise102\bdp\Safes.bxml:1:9:15:1:1:2" value="POSITION"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1709653955">
+<Unary_Exp op="POW">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:6:1:1:1" value="DOOR"/>
+</Unary_Exp>
+</Type>
+<Type id="2741815774">
+<Unary_Exp op="POW">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:6:2:1:1" value="POSITION"/>
+</Unary_Exp>
+</Type>
+<Type id="955270843">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:6:3:1" value="POSITION"/>
+</Type>
+<Type id="483395499">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:6:4:1:1:1" value="DOOR"/>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:6:4:1:1:2" value="POSITION"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2092253592">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:6:5:1:1:1:1" value="DOOR"/>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:6:5:1:1:1:2" value="POSITION"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1028334486">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Doors.bxml:1:6:6:1" value="DOOR"/>
+</Type>
+<Type id="515940807">
+<Unary_Exp op="POW">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:1:1:1" value="STATUS"/>
+</Unary_Exp>
+</Type>
+<Type id="2246778642">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:2:1" value="STATUS"/>
+</Type>
+<Type id="1113446292">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:3:1:1:1" value="DOOR"/>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:3:1:1:2" value="STATUS"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1643589999">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:4:1:1:1:1" value="DOOR"/>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:4:1:1:1:2" value="STATUS"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1709653955">
+<Unary_Exp op="POW">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:5:1:1" value="DOOR"/>
+</Unary_Exp>
+</Type>
+<Type id="121607861">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:6:1:1:1" value="POSITION"/>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:6:1:1:2" value="DOOR"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="483395499">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:7:1:1:1" value="DOOR"/>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:7:1:1:2" value="POSITION"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2741815774">
+<Unary_Exp op="POW">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:8:1:1" value="POSITION"/>
+</Unary_Exp>
+</Type>
+<Type id="955270843">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:9:1" value="POSITION"/>
+</Type>
+<Type id="1996258700">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:10:1:1:1" value="STATUS"/>
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:10:1:1:2" value="DOOR"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1028334486">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Locks.bxml:1:8:11:1" value="DOOR"/>
+</Type>
+<Type id="3822943642">
+<Unary_Exp op="POW">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:6:1:1:1" value="KEY"/>
+</Unary_Exp>
+</Type>
+<Type id="3817003670">
+<Unary_Exp op="POW">
+<Generic_Type tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:6:2:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="957941801">
+<Id tag="C:/Users/hivana-sinfo/mf/b-method-exercises/chapter-10/Exercise102/bdp\Keys.bxml:1:6:3:1" value="KEY"/>
+</Type>
+</TypeInfos>
+</Proof_Obligations>

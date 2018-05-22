@@ -1,0 +1,98 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(30) & WellDefinedness_quicklock.2,(_f(47) & _f(45) => _f(58));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(30) & WellDefinedness_quicklock.1,(_f(47) & _f(45) => _f(57));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & WellDefinedness_Precondition_quicklock.2,(_f(47) & _f(45) => _f(58));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & WellDefinedness_Precondition_quicklock.1,(_f(47) & _f(45) => _f(57));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & WellDefinedness_Precondition_unlock.2,(_f(47) & _f(45) => _f(56));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & WellDefinedness_Precondition_unlock.1,(_f(47) & _f(45) => _f(55));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & WellDefinedness_Precondition_extract.4,(_f(48) & _f(47) & _f(51) & _f(45) => _f(53));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & WellDefinedness_Precondition_extract.3,(_f(48) & _f(47) & _f(51) & _f(45) => _f(52));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & WellDefinedness_Precondition_extract.2,(_f(48) & _f(47) & _f(45) => _f(50));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & WellDefinedness_Precondition_extract.1,(_f(48) & _f(47) & _f(45) => _f(49));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & WellDefinedness_Precondition_insert.2,(_f(48) & _f(47) & _f(45) => _f(50));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & WellDefinedness_Precondition_insert.1,(_f(48) & _f(47) & _f(45) => _f(49));
+_f(1) & _f(2) & _f(3) & _f(4) & WellDefinednessInvariant.1,(_f(44) & _f(43) & _f(45) => _f(46));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(39) & removemaster.3,(_f(13) & _f(20) => _f(40));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(39) & removemaster.2,(_f(13) & _f(18) => _f(19));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(39) & removemaster.1,(_f(13) & _f(16) => _f(17));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(35) & insertmaster.3,(_f(13) & _f(20) => _f(38));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(35) & insertmaster.2,(_f(13) & _f(18) => _f(37));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(35) & insertmaster.1,(_f(13) & _f(16) => _f(36));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(30) & quicklock.3,(_f(13) & _f(20) => _f(34));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(30) & quicklock.2,(_f(13) & _f(14) => _f(33));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(30) & quicklock.1,(_f(31) => _f(32));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(27) & unlock.2,(_f(13) & _f(20) => _f(29));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(27) & unlock.1,(_f(13) & _f(14) => _f(28));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(25) & extract.1,(_f(13) & _f(14) => _f(26));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(22) & _f(23) & insert.1,(_f(13) & _f(14) => _f(24));
+_f(1) & _f(2) & _f(3) & _f(4) & Initialisation.4,(_f(5) & _f(6) & _f(7) & _f(8) & _f(9) & _f(10) & _f(11) & _f(12) & _f(13) & _f(20) => _f(21));
+_f(1) & _f(2) & _f(3) & _f(4) & Initialisation.3,(_f(5) & _f(6) & _f(7) & _f(8) & _f(9) & _f(10) & _f(11) & _f(12) & _f(13) & _f(18) => _f(19));
+_f(1) & _f(2) & _f(3) & _f(4) & Initialisation.2,(_f(5) & _f(6) & _f(7) & _f(8) & _f(9) & _f(10) & _f(11) & _f(12) & _f(13) & _f(16) => _f(17));
+_f(1) & _f(2) & _f(3) & _f(4) & Initialisation.1,(_f(5) & _f(6) & _f(7) & _f(8) & _f(9) & _f(10) & _f(11) & _f(12) & _f(13) & _f(14) => _f(15))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+unlocks : KEY +-> DOOR & unlocks : KEY >+> DOOR & unlocks : KEY +->> DOOR & unlocks : KEY --> DOOR & dom(unlocks) = KEY & unlocks~ : DOOR +-> KEY & ran(unlocks) = DOOR & ((unlocks) : (((KEY) >->> (DOOR))));
+DOOR: FIN(INTEGER) & not(DOOR = {}) & ((1..2)*{POSITION}): FIN(NATURAL*{POSITION}) & not(((1..2)*{POSITION}) = {}) & ((1..2)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..2)*{STATUS}) = {}) & KEY: FIN(INTEGER) & not(KEY = {});
+position : DOOR +-> ((1..2)*{POSITION}) & dom(position) = DOOR & ((position) : (((DOOR) --> (((1..2)*{POSITION}))))) & status : DOOR +-> ((1..2)*{STATUS}) & dom(status) = DOOR & ((status) : (((DOOR) --> (((1..2)*{STATUS}))))) & ((position)~ )[({(1|->POSITION)})] : POW( ((status)~ )[({(2|->STATUS)})]) & keys : POW( KEY);
+(DOOR * ({(2|->POSITION)})) : DOOR +-> ((1..2)*{POSITION});
+dom((DOOR * ({(2|->POSITION)}))) = DOOR;
+(((DOOR * ({(2|->POSITION)}))) : (((DOOR) --> (((1..2)*{POSITION})))));
+(DOOR * ({(1|->STATUS)})) : DOOR +-> ((1..2)*{STATUS});
+dom((DOOR * ({(1|->STATUS)}))) = DOOR;
+(((DOOR * ({(1|->STATUS)}))) : (((DOOR) --> (((1..2)*{STATUS})))));
+(((DOOR * ({(2|->POSITION)})))~ )[({(1|->POSITION)})] : POW( (((DOOR * ({(1|->STATUS)})))~ )[({(2|->STATUS)})]);
+{} : POW( KEY);
+"Invariant is preserved";
+"Check invariant ((status)~ )[({unlocked})] : POW( (unlocks )[keys])";
+(((DOOR * ({(1|->STATUS)})))~ )[({(2|->STATUS)})] : POW( (unlocks )[{}]);
+"Check invariant masterkey : POW( DOOR)";
+{} : POW( DOOR);
+"Check invariant (card(masterkey) <= 1)";
+(card({}) <= 1);
+"Check invariant ((status)~ )[({unlocked})] : POW( masterkey)";
+(((DOOR * ({(1|->STATUS)})))~ )[({(2|->STATUS)})] : POW( {});
+((status)~ )[({(2|->STATUS)})] : POW( (unlocks )[keys]) & masterkey : POW( DOOR) & (card(masterkey) <= 1) & ((status)~ )[({(2|->STATUS)})] : POW( masterkey);
+((kk) : (KEY)) & ((dd) : (DOOR)) & (((unlocks )(kk)) = (dd));
+((status)~ )[({(2|->STATUS)})] : POW( (unlocks )[((keys) \/ (({kk})))]);
+((kk) : (KEY)) & ((dd) : (DOOR)) & (((unlocks )(kk)) = (dd)) & (((status )(dd)) = ((1|->STATUS)));
+((status)~ )[({(2|->STATUS)})] : POW( (unlocks )[(keys - ({kk}))]);
+((dd) : (DOOR)) & ((((unlocks)~ )(dd)) : (keys)) & ((dd) : (masterkey));
+((((status) <+ (({((dd) |-> ((2|->STATUS)))}))))~ )[({(2|->STATUS)})] : POW( (unlocks )[keys]);
+((((status) <+ (({((dd) |-> ((2|->STATUS)))}))))~ )[({(2|->STATUS)})] : POW( masterkey);
+((dd) : (DOOR)) & (((position )(dd)) = ((2|->POSITION)));
+"Precondition predicate";
+((((unlocks)~ )(dd)) : (KEY));
+((((status) <+ (({((dd) |-> ((1|->STATUS)))}))))~ )[({(2|->STATUS)})] : POW( (unlocks )[(keys - ({((unlocks)~ )(dd)}))]);
+((((status) <+ (({((dd) |-> ((1|->STATUS)))}))))~ )[({(2|->STATUS)})] : POW( masterkey);
+((dd) : (DOOR)) & ((masterkey) = ({}));
+({dd}) : POW( DOOR);
+(card(({dd})) <= 1);
+((status)~ )[({(2|->STATUS)})] : POW( ({dd}));
+(((status )[masterkey]) = (({(1|->STATUS)})));
+((status)~ )[({(2|->STATUS)})] : POW( {});
+btrue;
+(card(masterkey) <= 1);
+masterkey : POW( DOOR);
+((status)~ )[({(2|->STATUS)})] : POW( (unlocks )[keys]);
+"Well definedness";
+((masterkey) : (FIN(masterkey)));
+((dd) : (DOOR));
+((kk) : (KEY));
+((kk) : (dom(unlocks)));
+((unlocks) : (((dom(unlocks)) +-> (ran(unlocks)))));
+(((unlocks )(kk)) = (dd));
+((dd) : (dom(status)));
+((status) : (((dom(status)) +-> (ran(status)))));
+((((unlocks)~ )(dd)) : (keys));
+((dd) : (dom((unlocks)~)));
+(((unlocks)~) : (((dom((unlocks)~)) +-> (ran((unlocks)~)))));
+((dd) : (dom(position)));
+((position) : (((dom(position)) +-> (ran(position)))))
+END
+&
+THEORY EnumerateX IS
+POSITION == {open,closed};
+STATUS == {locked,unlocked}
+END
