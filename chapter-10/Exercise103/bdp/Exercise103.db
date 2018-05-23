@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<db_xml>
+    <atelierb version="3_7_ubuntu-cvs" />
+    <project decomp_dir="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise103\bdp\expand_src" old_decomp_dir="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise103\bdp\src">
+        <!-- Definition directory list -->
+        <definition_dir path="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise103" />
+        <!-- Component file list -->
+        <component_file path="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise103" name="Doors" suffix="mch" user="hivana-sinfo">
+            <component name="Doors" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise103" name="Keys" suffix="mch" user="hivana-sinfo">
+            <component name="Keys" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise103" name="Locks" suffix="mch" user="hivana-sinfo">
+            <component name="Locks" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\hivana-sinfo\mf\b-method-exercises\chapter-10\Exercise103" name="Safes" suffix="mch" user="hivana-sinfo">
+            <component name="Safes" type="specification" />
+        </component_file>
+    </project>
+</db_xml>

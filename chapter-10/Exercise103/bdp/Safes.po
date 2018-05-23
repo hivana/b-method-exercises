@@ -1,0 +1,102 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(3) & _f(19) & _f(36) & WellDefinedness_quicklock.2,(_f(46) & _f(51) => _f(61));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(36) & WellDefinedness_quicklock.1,(_f(46) & _f(51) => _f(60));
+_f(1) & _f(2) & _f(3) & _f(19) & WellDefinedness_Precondition_quicklock.2,(_f(46) & _f(51) => _f(61));
+_f(1) & _f(2) & _f(3) & _f(19) & WellDefinedness_Precondition_quicklock.1,(_f(46) & _f(51) => _f(60));
+_f(1) & _f(2) & _f(3) & _f(19) & WellDefinedness_Precondition_unlock.2,(_f(46) & _f(51) => _f(58));
+_f(1) & _f(2) & _f(3) & _f(19) & WellDefinedness_Precondition_unlock.1,(_f(46) & _f(51) => _f(57));
+_f(1) & _f(2) & _f(3) & _f(19) & WellDefinedness_Precondition_extract.4,(_f(48) & _f(46) & _f(56) & _f(51) => _f(53));
+_f(1) & _f(2) & _f(3) & _f(19) & WellDefinedness_Precondition_extract.3,(_f(48) & _f(46) & _f(56) & _f(51) => _f(52));
+_f(1) & _f(2) & _f(3) & _f(19) & WellDefinedness_Precondition_extract.2,(_f(48) & _f(46) & _f(51) => _f(55));
+_f(1) & _f(2) & _f(3) & _f(19) & WellDefinedness_Precondition_extract.1,(_f(48) & _f(46) & _f(51) => _f(54));
+_f(1) & _f(2) & _f(3) & _f(19) & WellDefinedness_Precondition_insert.2,(_f(48) & _f(46) & _f(51) => _f(55));
+_f(1) & _f(2) & _f(3) & _f(19) & WellDefinedness_Precondition_insert.1,(_f(48) & _f(46) & _f(51) => _f(54));
+_f(1) & _f(2) & _f(3) & _f(19) & WellDefinedness_Precondition_deallocate.2,(_f(48) & _f(46) & _f(50) & _f(49) & _f(51) => _f(53));
+_f(1) & _f(2) & _f(3) & _f(19) & WellDefinedness_Precondition_deallocate.1,(_f(48) & _f(46) & _f(50) & _f(49) & _f(51) => _f(52));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(36) & quicklock.3,(_f(12) & _f(17) => _f(40));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(36) & quicklock.2,(_f(12) & _f(15) => _f(39));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(36) & quicklock.1,(_f(37) => _f(38));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(34) & unlock.1,(_f(12) & _f(15) => _f(35));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(31) & extract.2,(_f(12) & _f(17) => _f(33));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(31) & extract.1,(_f(12) & _f(15) => _f(32));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(28) & insert.2,(_f(12) & _f(17) => _f(30));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(28) & insert.1,(_f(12) & _f(15) => _f(29));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(24) & deallocate.3,(_f(12) & _f(17) => _f(27));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(24) & deallocate.2,(_f(12) & _f(15) => _f(26));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(24) & deallocate.1,(_f(12) & _f(13) => _f(25));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(20) & allocate.3,(_f(12) & _f(17) => _f(23));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(20) & allocate.2,(_f(12) & _f(15) => _f(22));
+_f(1) & _f(2) & _f(3) & _f(19) & _f(20) & allocate.1,(_f(12) & _f(13) => _f(21));
+_f(1) & _f(2) & _f(3) & Initialisation.3,(_f(4) & _f(5) & _f(6) & _f(7) & _f(8) & _f(9) & _f(10) & _f(11) & _f(12) & _f(17) => _f(18));
+_f(1) & _f(2) & _f(3) & Initialisation.2,(_f(4) & _f(5) & _f(6) & _f(7) & _f(8) & _f(9) & _f(10) & _f(11) & _f(12) & _f(15) => _f(16));
+_f(1) & _f(2) & _f(3) & Initialisation.1,(_f(4) & _f(5) & _f(6) & _f(7) & _f(8) & _f(9) & _f(10) & _f(11) & _f(12) & _f(13) => _f(14))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+DOOR: FIN(INTEGER) & not(DOOR = {}) & ((1..2)*{POSITION}): FIN(NATURAL*{POSITION}) & not(((1..2)*{POSITION}) = {}) & ((1..2)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..2)*{STATUS}) = {}) & KEY: FIN(INTEGER) & not(KEY = {});
+position : DOOR +-> ((1..2)*{POSITION}) & dom(position) = DOOR & ((position) : (((DOOR) --> (((1..2)*{POSITION}))))) & status : DOOR +-> ((1..2)*{STATUS}) & dom(status) = DOOR & ((status) : (((DOOR) --> (((1..2)*{STATUS}))))) & ((position)~ )[({(1|->POSITION)})] : POW( ((status)~ )[({(2|->STATUS)})]) & keys : POW( KEY);
+(DOOR * ({(2|->POSITION)})) : DOOR +-> ((1..2)*{POSITION});
+dom((DOOR * ({(2|->POSITION)}))) = DOOR;
+(((DOOR * ({(2|->POSITION)}))) : (((DOOR) --> (((1..2)*{POSITION})))));
+(DOOR * ({(1|->STATUS)})) : DOOR +-> ((1..2)*{STATUS});
+dom((DOOR * ({(1|->STATUS)}))) = DOOR;
+(((DOOR * ({(1|->STATUS)}))) : (((DOOR) --> (((1..2)*{STATUS})))));
+(((DOOR * ({(2|->POSITION)})))~ )[({(1|->POSITION)})] : POW( (((DOOR * ({(1|->STATUS)})))~ )[({(2|->STATUS)})]);
+{} : POW( KEY);
+"Invariant is preserved";
+"Check invariant ((unlocks) : (((KEY) >+> (DOOR))))";
+(({}) : (((KEY) >+> (DOOR))));
+"Check invariant ((status)~ )[({unlocked})] : POW( (unlocks )[keys])";
+(((DOOR * ({(1|->STATUS)})))~ )[({(2|->STATUS)})] : POW( ({} )[{}]);
+"Check invariant keys : POW( dom(unlocks))";
+{} : POW( dom({}));
+unlocks : KEY +-> DOOR & unlocks~ : DOOR +-> KEY & ((unlocks) : (((KEY) >+> (DOOR)))) & ((status)~ )[({(2|->STATUS)})] : POW( (unlocks )[keys]) & keys : POW( dom(unlocks));
+((kk) : (KEY)) & not(kk : dom(unlocks)) & ((dd) : (DOOR)) & not(dd : ran(unlocks));
+((((unlocks) <+ (({((kk) |-> (dd))})))) : (((KEY) >+> (DOOR))));
+((status)~ )[({(2|->STATUS)})] : POW( (((unlocks) <+ (({((kk) |-> (dd))}))) )[keys]);
+keys : POW( dom(((unlocks) <+ (({((kk) |-> (dd))})))));
+((kk) : (KEY)) & ((dd) : (DOOR)) & ((((kk) |-> (dd))) : (unlocks)) & not(kk : keys) & (((status )(dd)) = ((1|->STATUS)));
+((((({kk})) <| (unlocks))) : (((KEY) >+> (DOOR))));
+((status)~ )[({(2|->STATUS)})] : POW( (((({kk})) <| (unlocks)) )[keys]);
+keys : POW( dom(((({kk})) <| (unlocks))));
+((kk) : (KEY)) & ((dd) : (DOOR)) & (((unlocks )(kk)) = (dd));
+((status)~ )[({(2|->STATUS)})] : POW( (unlocks )[((keys) \/ (({kk})))]);
+((keys) \/ (({kk}))) : POW( dom(unlocks));
+((kk) : (KEY)) & ((dd) : (DOOR)) & (((unlocks )(kk)) = (dd)) & (((status )(dd)) = ((1|->STATUS)));
+((status)~ )[({(2|->STATUS)})] : POW( (unlocks )[(keys - ({kk}))]);
+(keys - ({kk})) : POW( dom(unlocks));
+((dd) : (DOOR)) & ((((unlocks)~ )(dd)) : (keys));
+((((status) <+ (({((dd) |-> ((2|->STATUS)))}))))~ )[({(2|->STATUS)})] : POW( (unlocks )[keys]);
+((dd) : (DOOR)) & (((position )(dd)) = ((2|->POSITION))) & ((dd) : (ran(unlocks)));
+"Precondition predicate";
+((((unlocks)~ )(dd)) : (KEY));
+((((status) <+ (({((dd) |-> ((1|->STATUS)))}))))~ )[({(2|->STATUS)})] : POW( (unlocks )[(keys - ({((unlocks)~ )(dd)}))]);
+(keys - ({((unlocks)~ )(dd)})) : POW( dom(unlocks));
+btrue;
+((status)~ )[({(2|->STATUS)})] : POW( (unlocks )[keys]);
+unlocks : KEY +-> DOOR;
+unlocks~ : DOOR +-> KEY;
+((unlocks) : (((KEY) >+> (DOOR))));
+((dd) : (DOOR));
+not(kk : dom(unlocks));
+((kk) : (KEY));
+not(kk : keys);
+((((kk) |-> (dd))) : (unlocks));
+"Well definedness";
+((dd) : (dom(status)));
+((status) : (((dom(status)) +-> (ran(status)))));
+((kk) : (dom(unlocks)));
+((unlocks) : (((dom(unlocks)) +-> (ran(unlocks)))));
+(((unlocks )(kk)) = (dd));
+((dd) : (dom((unlocks)~)));
+(((unlocks)~) : (((dom((unlocks)~)) +-> (ran((unlocks)~)))));
+(((position )(dd)) = ((2|->POSITION)));
+((dd) : (dom(position)));
+((position) : (((dom(position)) +-> (ran(position)))))
+END
+&
+THEORY EnumerateX IS
+POSITION == {open,closed};
+STATUS == {locked,unlocked}
+END
